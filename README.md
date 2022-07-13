@@ -2,6 +2,9 @@
 
 ### App Description
 #### CapBank is a full stack banking (psuedo ATM) application created with Angular as the front-end framework, SpringBoot as the Java back-end framework and MongoDB as the database. Users will be able to sign in to their accounts, complete transactions such as depositing, withdrawing, creating new accounts, and checking balances. 
+
+#### The main goal of this project is so create an introduction into other marketable languages and create a project that will be continously developed along with other full stack applications. A secondary goal is to take the learned languages and transfer those concepts to other languages. 
+
 ---
 ### Tech Descriptions
 
@@ -42,6 +45,10 @@ As a user:
 - ability to create a transaction
 - ability to close account
 - ability to sort accounts
+---
+## Possible Roadblocks
+- problem solving/debugging in new languages
+- time/sprint management
 ---
 ## Stretch Goals
 - mobile friendly/responsive front end
