@@ -4370,7 +4370,7 @@
     className: 'modal-backdrop',
     clickCallback: null,
     isAnimated: false,
-    isVisible: true,
+    isVisible: false,
     // if false, we use the backdrop helper without adding any element to the dom
     rootElement: 'body' // give the choice to place backdrop under different elements
 

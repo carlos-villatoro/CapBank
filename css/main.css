@@ -16,7 +16,7 @@ body{
 .main-page-header .app-name{
     font-weight: 600;
     color: #3d424a;
-    font-size:x-large;
+    font-size:xx-large;
     text-shadow:1px 1px #e6e5de;
 }
 
@@ -43,4 +43,16 @@ body{
 
 .display-name i{
     font-weight: 600;
+}
+
+#transaction-btn{
+    background-color: #3d424a;
+    border: 1px solid white;
+    color: white;
+}
+
+#new-account-btn{
+    background-color: #feae49;
+    border: 1px solid black;
+    color: black;
 }
