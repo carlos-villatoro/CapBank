@@ -40,3 +40,26 @@ body{
     background-color: #57bee6;
     border: 1px solid #019bfb;
 }
+
+/* forms */
+.card{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card .form-control{
+    margin: 10px 0px;
+    box-shadow: 2px 4px #c5c4bb;
+    
+}
+
+.card .card-title{
+    color: white;
+}
+
+.card button{
+    background-color: #feae49;
+    border: 1px solid #d27300;
+    color: white;
+    width: 200px;
+    margin: 10px 0px;
+    box-shadow: 2px 4px #d27300;
+}
