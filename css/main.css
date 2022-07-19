@@ -40,3 +40,7 @@ body{
     color: white;
     text-decoration: none;
 }
+
+.display-name i{
+    font-weight: 600;
+}
