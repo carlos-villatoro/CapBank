@@ -8,6 +8,10 @@ body{
 
 }
 
+.container{
+    margin: 20px auto;
+}
+
 .main-page-header{
     background-color: #57bee6;
     padding: 10px 0px;
