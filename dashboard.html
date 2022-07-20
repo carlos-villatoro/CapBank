@@ -81,7 +81,7 @@
                 <option value="payment">Payment</option>
                 <option value="transfer">Transfer</option>
                 <option value="deposit">Deposit</option>
-                <option value="withdrawl">Withdrawl</option>
+                <option value="withdraw">Withdraw</option>
             </select>
 
             <!-- payment card -->
@@ -160,34 +160,54 @@
                 </div>
             </div>
 
-            <!-- transfer card -->
-            <div class="card transfer-card text-bg-dark border-white ">
+            <!-- deposit card -->
+            <div class="card deposit-card text-bg-dark border-white ">
                 <div class="card-body">
 
                     <div class="form-group mb-2">
-                        <label for="">Select Your Account to Transfer From:</label>
+                        <label for="">Select Your Account to Deposit To:</label>
                         <select name="account_id" class="form-control mb-3" id="">
                             <option value="">Select Account</option>
                         </select>
                     </div>
 
                     <div class="form-group mb-2">
-                        <label for="">Select Your Account to Transfer To:</label>
-                        <select name="account_id" class="form-control mb-3" id="">
-                            <option value="">Select Account</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group mb-2">
-                        <label for="">Transfer Amount:</label>
-                        <input type="text" name="transfer_amount" class="form-control"
-                            placeholder="Enter transfer amount">
+                        <label for="">Deposit Amount:</label>
+                        <input type="text" name="deposit_amount" class="form-control"
+                            placeholder="Enter deposit amount">
                     </div>
 
 
                     <div class="form-group mb-2">
                         <button id="new-account-btn">
-                            Complete Transfer
+                            Complete Deposit
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- withdraw card -->
+            <div class="card withdraw-card text-bg-dark border-white ">
+                <div class="card-body">
+
+                    <div class="form-group mb-2">
+                        <label for="">Select Your Account to Withdraw From:</label>
+                        <select name="account_id" class="form-control mb-3" id="">
+                            <option value="">Select Account</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="">Withdraw Amount:</label>
+                        <input type="text" name="withdraw_amount" class="form-control"
+                            placeholder="Enter withdraw amount">
+                    </div>
+
+
+                    <div class="form-group mb-2">
+                        <button id="new-account-btn">
+                            Complete Withdraw
                         </button>
                     </div>
 
