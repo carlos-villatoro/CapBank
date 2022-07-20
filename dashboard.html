@@ -65,7 +65,7 @@
 
     </div>
 
-    <!-- offcanvas bodies -->
+    <!-- new trans form canvas body -->
     <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasLeft"
         aria-labelledby="offcanvasLeftLabel">
         <div class="offcanvas-header">
@@ -217,16 +217,43 @@
         </div>
     </div>
 
+    <!-- new account form canvas body -->
     <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <h5 id="offcanvasRight">Offcanvas</h5>
+            <h5 id="offcanvasRight" class="">Add an Account</h5>
             <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
         </div>
         <!-- create account -->
         <div class="offcanvas-body">
-            New Account Form
+            <div class="card text-bg-dark border-white">
+                <form action="" class="add-account-form">
+                    <div class="card-body">
+
+                        <div class="form-group mb-3">
+                            <label for="">Account Name</label>
+                            <input type="text" name="account_name" class="form-control" placeholder="Enter Account Name...">
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <select name="account_type" id="" class="form-control">
+                                <option value="">Select Account Type</option>
+                                <option value="checking">Checking</option>
+                                <option value="savings">Savings</option>
+                                <option value="business">Business</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <button id="new-account-btn">
+                                Add Account
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <!-- offcanvas bodies -->
