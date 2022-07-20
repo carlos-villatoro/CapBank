@@ -66,21 +66,143 @@
     </div>
 
     <!-- offcanvas bodies -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasLeft"
+        aria-labelledby="offcanvasLeftLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasLeftLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title" id="offcanvasLeftLabel">New Transaction</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
         </div>
         <!-- transactions -->
         <div class="offcanvas-body">
-            Transactions Form
+
+            <select name="transaction-type" class="form-control mb-3" id="transaction-type">
+                <option value="">Select Transaction Type</option>
+                <option value="payment">Payment</option>
+                <option value="transfer">Transfer</option>
+                <option value="deposit">Deposit</option>
+                <option value="withdrawl">Withdrawl</option>
+            </select>
+
+            <!-- payment card -->
+            <div class="card payment-card text-bg-dark border-white ">
+                <div class="card-body">
+
+                    <div class="form-group mb-2">
+                        <label for="">Account Holder:</label>
+                        <input type="text" name="holder" class="form-control" placeholder="Enter account holder's name">
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="">Account Number:</label>
+                        <input type="text" name="account_number" class="form-control"
+                            placeholder="Enter account number">
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="">Select Your Account to Pay From:</label>
+                        <select name="account_id" class="form-control mb-3" id="">
+                            <option value="">Select Account</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="">Payment Amount:</label>
+                        <input type="text" name="payment_amount" class="form-control"
+                            placeholder="Enter payment amount">
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="">Memo:</label>
+                        <input type="text" name="memo" class="form-control" placeholder="What is this payment for?">
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <button id="new-account-btn">
+                            Send Payment
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- transfer card -->
+            <div class="card transfer-card text-bg-dark border-white ">
+                <div class="card-body">
+
+                    <div class="form-group mb-2">
+                        <label for="">Select Your Account to Transfer From:</label>
+                        <select name="account_id" class="form-control mb-3" id="">
+                            <option value="">Select Account</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="">Select Your Account to Transfer To:</label>
+                        <select name="account_id" class="form-control mb-3" id="">
+                            <option value="">Select Account</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="">Transfer Amount:</label>
+                        <input type="text" name="transfer_amount" class="form-control"
+                            placeholder="Enter transfer amount">
+                    </div>
+
+
+                    <div class="form-group mb-2">
+                        <button id="new-account-btn">
+                            Complete Transfer
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- transfer card -->
+            <div class="card transfer-card text-bg-dark border-white ">
+                <div class="card-body">
+
+                    <div class="form-group mb-2">
+                        <label for="">Select Your Account to Transfer From:</label>
+                        <select name="account_id" class="form-control mb-3" id="">
+                            <option value="">Select Account</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="">Select Your Account to Transfer To:</label>
+                        <select name="account_id" class="form-control mb-3" id="">
+                            <option value="">Select Account</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="">Transfer Amount:</label>
+                        <input type="text" name="transfer_amount" class="form-control"
+                            placeholder="Enter transfer amount">
+                    </div>
+
+
+                    <div class="form-group mb-2">
+                        <button id="new-account-btn">
+                            Complete Transfer
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 id="offcanvasRight">Offcanvas</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
         </div>
         <!-- create account -->
         <div class="offcanvas-body">
@@ -157,7 +279,7 @@
             <div class="card-body">
 
                 <h1 class="card-title">
-                    <i class="fas fa-ban text-danger"></i>No Accounts 
+                    <i class="fas fa-ban text-danger"></i>No Accounts
                 </h1>
 
                 <hr>
@@ -167,15 +289,15 @@
                     <br>
                     Click below to add your first account.
 
-                    
-                </button>
-            </div>
 
-            <br>
+                    </button>
+                </div>
 
-            <button id="new-account-btn" class="btn" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-            <i class="fa fa-wallet"></i> Add New Account
+                <br>
+
+                <button id="new-account-btn" class="btn" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class="fa fa-wallet"></i> Add New Account
 
             </div>
         </div>
@@ -184,6 +306,7 @@
 
 
     <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 

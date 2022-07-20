@@ -60,3 +60,16 @@ body{
     border: 1px solid black;
     color: black;
 }
+
+.payment-card{
+    display: none;
+}
+.transfer-card{
+    display: none;
+}
+.deposit-card{
+    display: none;
+}
+.withdrawl-card{
+    display: none;
+}
